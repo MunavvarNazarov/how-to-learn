@@ -16,25 +16,23 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
+  z-index: -3;
 }
 .logo_place_header {
   position: absolute;
   size: 183px 32px;
   margin-top: 30px;
   margin-left: 64px;
-  z-index: 9999;
 }
 .header__title {
   width: 730px;
   height: auto;
   position: absolute;
   align-self: center;
-
   line-height: 96px;
   font-size: 102px;
   margin-left: 64px;
   margin-right: -5px;
-  z-index: 2;
 }
 .header__subtitle {
   width: 388px;
@@ -44,19 +42,18 @@
   margin-bottom: 30px;
   align-self: flex-end;
   position: absolute;
-  z-index: 2;
 }
 .header__link {
   color: #2f80ed;
 }
 .header__square-pic {
-background: #2f80ed;
-width: 568px;
-height: 568px;
-margin-top: 60px;
-position: absolute;
-right: 0;
-z-index: 1;
+  background: #2f80ed;
+  width: 568px;
+  height: 568px;
+  margin-top: 60px;
+  position: absolute;
+  right: 0;
+  z-index: -2;
 }
 .main-illustration {
   position: absolute;
@@ -64,7 +61,7 @@ z-index: 1;
   height: 608px;
   right: 0;
   align-self: flex-end;
-  z-index: 2;
+  z-index: -1;
 }
 
 .description {
@@ -212,17 +209,18 @@ color: #2f80ed;
   position: relative;
   padding-bottom: 90px;
   padding-top: 90px;
+  z-index: 1;
 }
 .section-title_theme_dark {
   color: white;
-  z-index: 10;
+
 }
 .section-subtitle_theme_dark {
   color: white;
-  z-index: 10;
+
 }
 .kaufman__table_theme_dark {
-  z-index: 100;
+
   position: relative;
   display: flex;
   margin: 0 auto;
@@ -237,7 +235,7 @@ color: #2f80ed;
   padding-top: 80px;
   margin: 0;
   vertical-align: top;
-  z-index: 10;
+
 }
 .kaufman__triangle {
   position: absolute;
@@ -245,7 +243,7 @@ color: #2f80ed;
   right: -210px;
   width: 877px;
   height: 877px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .footer {
@@ -298,3 +296,8 @@ color: #2f80ed;
   size: 16px 16px;
   padding-right: 10px;
 }
+.links:hover {
+	background: slategray;
+	color: springgreen;
+}
+
