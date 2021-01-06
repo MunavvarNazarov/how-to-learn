@@ -9,31 +9,33 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
+.header {  /* z-index: заголовка, подзаголовка лого должны быть поверх других блоков. а если не задавать индекс то это значит он равен нулю? ....ну вот исходя из этого у меня значит "4 этажа": 0/1/2/3 или -3/-2/-1/0//// если я чего то недопонимаю то объясните мне пожалуйста! и вы мне ссылку посылаете где можно ЧИТАТЬ, это НЕ ДОСТАТОЧНО. дайте ссылку там где с многими И разными примерами, ведь теория без практики забываются очень быстро! спасибо!*/
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
   display: flex;
   position: relative;
-  z-index: -3;
 }
-.header__logo_place_header {
+.logo_place_header {
   position: absolute;
-  size: 183px 32px;
-  margin-top: 30px;
-  margin-left: 64px;
+  width: 183px;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+  z-index: 3;
 }
 .header__title {
   width: 730px;
   height: auto;
-  position: absolute;
   align-self: center;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 64px;
-  margin-right: -5px;
+  z-index: 3;
 }
 .header__subtitle {
   width: 388px;
@@ -44,9 +46,11 @@
   margin-bottom: 30px;
   align-self: flex-end;
   position: absolute;
+  z-index: 3;
 }
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 .header__square-pic {
   background: #2f80ed;
@@ -55,15 +59,16 @@
   margin-top: 60px;
   position: absolute;
   right: 0;
-  z-index: -2;
+  z-index: 1;
 }
 .header__main-illustration {
   position: absolute;
   width: 765px;
   height: 608px;
   right: 0;
+  bottom: 0;
   align-self: flex-end;
-  z-index: -1;
+  z-index: 2;
 }
 
 .description {
@@ -79,19 +84,18 @@
   display: flex;
   justify-content: space-between;
 }
-.two-columns__breif {
+.two-columns__brief {
   color: #2f80ed;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  float: left;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  float: right;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -104,7 +108,7 @@
   margin-bottom: 30px;
   margin-top: 0;
 }
-.description__paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 .two-columns__span-accent {
@@ -132,9 +136,7 @@
 .section-subtitle {
   width: 60%;
   text-align: center;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 0 auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -143,10 +145,12 @@
 .table {
   display: flex;
   margin: 0 auto;
+  padding-left: 0;
   width: 1100px;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content:space-between;
+  list-style-type: none;
 }
 .table__heading {
   line-height: 1.15;
@@ -164,16 +168,17 @@
 .table__cell {
   vertical-align: top;
   width: 250px;
-  margin: auto;
   padding-top: 60px;
 }
+
 
 .feynman {
   display: flex;
   position: relative;
-  height: 790px;
+  min-height: 790px;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-size: 867px 637px;
@@ -186,13 +191,15 @@
   font-weight: bold;
   line-height: 1.15;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 0;
   margin-bottom: 70px;
 }
 .feynman__subtitle {
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .feynman__link {
 top: 50%;
@@ -209,34 +216,26 @@ color: #2f80ed;
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
-  /*padding-bottom: 90px;
-  padding-top: 90px;*/
   z-index: 1;
-/*
-  background-image: url(../images/kaufman-triangle.svg);
-
-  background-repeat: no-repeat;
-  background-size: 877px 877px;
-  background*/
-
-
+  padding-bottom: 90px;
 }
 .section-title_theme_dark {
-  color: white;
   margin-top: 90px;
+  color: white;
 }
 .section-subtitle_theme_dark {
   color: white;
 }
 .table__theme_dark {
-  position: relative;
   display: flex;
   margin: 0 auto 90px auto;
+  padding-left: 0;
   width: 1100px;
-  flex-direction: column;
-  align-items: center;
-  justify-content:space-between;
-
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
 }
 .table__cell_theme_dark {
   width: 200px;
@@ -246,6 +245,9 @@ color: #2f80ed;
   vertical-align: top;
 }
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: 877px 877px;
   position: absolute;
   top: 0;
   right: -210px;
@@ -272,7 +274,7 @@ color: #2f80ed;
   flex-direction: column;
   justify-content: space-between;
 }
-.logo__place_footer {
+.logo_place_footer {
   size: 183px 35px;
   align-self: flex-start;
 }
@@ -294,25 +296,33 @@ color: #2f80ed;
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  text-decoration: none;
+  color: white;
 }
 .footer__social-icon {
-  size: 16px 16px;
+  width: 16px;
+  height: 16px;
   padding-right: 10px;
 }
-.links:hover {
+
+.header__link:hover {
+	background: slategray;
+	color: springgreen;
+}
+.feynman__link:hover {
+	background: slategray;
+	color: springgreen;
+}
+.footer__column-link:hover {
 	background: slategray;
 	color: springgreen;
 }
 
-li {
-  list-style-type: none;
-}
-ul {
-  margin-left: 0;
-  padding-left: 0;
- }
