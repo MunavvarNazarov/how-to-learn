@@ -37,8 +37,8 @@
   font-weight: normal;
   line-height: 25px;
   font-size: 18px;
-  padding-bottom: 30px;
-  padding-left: 64px;
+  bottom: 30px;
+  left: 64px;
   margin: 0;
   align-self: flex-end;
   position: absolute;
@@ -212,7 +212,6 @@ color: #2f80ed;
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-bottom: 90px;
 }
 .section-title_theme_dark {
   margin-top: 90px;
@@ -221,7 +220,7 @@ color: #2f80ed;
 .section-subtitle_theme_dark {
   color: white;
 }
-.table__theme_dark {
+.table_theme_dark {
   display: flex;
   margin: 0 auto 90px auto;
   padding-left: 0;
