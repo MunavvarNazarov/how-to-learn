@@ -1,0 +1,115 @@
+@import url(../blocks/footer/footer.css);
+
+
+@import url(../blocks/description/description.css);/*
+@import url(../blocks/description/two-columns/two-columns.css);
+@import url(../blocks/description/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/description/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/description/two-columns/__paragraph/two-columns__paragraph.css);*/
+@import url(../blocks/description/two-columns/__span-accent/two-columns__span-accent.css);
+
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/techniques/cards/cards.css);
+@import url(../blocks/techniques/cards/__title/cards__title.css);
+@import url(../blocks/techniques/cards/__description/cards__description.css);
+@import url(../blocks/techniques/cards/__item/cards__item.css);
+@import url(../blocks/techniques/cards/__image/cards__image.css);
+
+
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__iframes/video__iframes.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+
+
+@import url(../blocks/digits/digits.css);
+
+
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/feynman/__title/feynman__title.css);
+@import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/feynman/__link/feynman__link.css);
+
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/header/logo_place_header/logo_place_header.css);
+
+
+@import url(../blocks/kaufman/kaufman.css);
+
+
+@import url(../blocks/khan/khan.css);
+
+
+@import url(../blocks/oakley/oakley.css);
+
+
+@import url(../blocks/resources/resources.css);
+
+
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.two-columns {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.two-columns__brief {
+  color: #2f80ed;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+}
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto 0 auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  position: relative;
+}
