@@ -6,7 +6,8 @@
   position: absolute;
   right: 0;
   z-index: -2;
-}/*
+}
+/*
 .rotation {
   animation: rotate 20s linear infinite;
 }
@@ -14,4 +15,4 @@
   from {
     transform: rotate(-360deg);
   }
-}
+}*/
