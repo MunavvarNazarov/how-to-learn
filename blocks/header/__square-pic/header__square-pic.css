@@ -6,6 +6,8 @@
   position: absolute;
   right: 0;
   z-index: -2;
+}/*
+.rotation {
   animation: rotate 20s linear infinite;
 }
 @keyframes rotate {
