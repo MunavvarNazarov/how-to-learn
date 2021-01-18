@@ -1,4 +1,4 @@
-@import url(../blocks/footer/footer.css);
+@import url(../styles/normalize.css);
 
 
 @import url(../blocks/description/description.css);
@@ -94,3 +94,6 @@
 
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-subtitle/_theme_dark/section-subtitle_theme_dark.css);
+
+
+@import url(../blocks/page/page.css);

@@ -4,15 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="pages/index.css">
-  <link rel="stylesheet" href="pages/style.css">
-
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="За стеклом">
+      <a href="https://praktikum.yandex.ru/" class="logo logo_place_header"><img src="images/logo_place_header.svg" alt="За стеклом"></a>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
         Какие современные эффективные подходы к обучению вы можете использовать в своей жизни?
@@ -30,42 +27,9 @@
           </div>
         </div>
       </section>
-
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
-        <!-- <table class="cards">
-          <tr>
-            <td class="cards__item">
-              <img src="images/cards-attention.png" alt="attention" class="cards__image">
-              <h3 class="cards__title">Два вида внимания</h3>
-              <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
-            </td>
-            <td class="cards__item">
-              <img src="images/cards-recall.png" alt="recall" class="cards__image">
-              <h3 class="cards__title">Recall</h3>
-              <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
-            </td>
-            <td class="cards__item">
-              <img src="images/cards-interliving.png" alt="interliving" class="cards__image">
-              <h3 class="cards__title">Интерливинг</h3>
-              <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="cards__item">
-              <img src="images/cards-question.png" alt="questions" class="cards__image">
-              <h3 class="cards__title">Вопросы</h3>
-              <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
-            </td>
-            <td class="cards__item">
-              <img src="images/cards-competence.png" alt="competence" class="cards__image">
-              <h3 class="cards__title">Иллюзия компетентности</h3>
-              <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
-            </td>
-            <td class="cards__item"></td>
-          </tr>
-        </table> -->
         <ul class="cards">
           <li class="cards__item">
             <img src="images/cards-attention.png" alt="attention" class="cards__image">
@@ -95,17 +59,14 @@
           <li class="cards__item"></li>
         </ul>
       </section>
-
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
           <iframe src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video__iframe" allowfullscreen></iframe>
-
           <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="video__iframe" allowfullscreen></iframe>
         </div>
       </section>
-
       <section class="oakley">
         <div class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
@@ -114,17 +75,11 @@
           </div>
         </div>
       </section>
-
-
-
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть</p>
         <a class="feynman__link" href="#" target="_blank">Подробнее &rarr;</a>
       </section>
-
-
-
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учебу и мозг</p>
@@ -165,7 +120,6 @@
           </li>
         </ul>
         </section>
-
         <section class="khan">
           <div class="khan__container">
             <p class="khan__author">Салман Хан</p>
@@ -179,9 +133,6 @@
             </div>
           </div>
         </section>
-
-
-
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
@@ -229,27 +180,37 @@
         </ul>
           <div class="kaufman__triangle rotation"></div>
       </section>
-
-
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <img src="images/logo/resources-arzamas.svg" alt="arzamas-logo" class="resources__logo">
-          <img src="images/logo/resources-n1.svg" alt="n1-logo" class="resources__logo">
-          <img src="images/logo/resources-strelka.svg" alt="strelka-logo" class="resources__logo">
-          <img src="images/logo/resources-polka.svg" alt="polka-logo" class="resources__logo">
-        </div>
+        <ul class="resources__logo-zone">
+          <li class="resources__logo">
+            <a href="https://arzamas.academy/">
+              <img src="images/logo/resources-arzamas.svg" alt="arzamas-logo">
+            </a>
+          </li>
+          <li class="resources__logo">
+            <a href="#">
+              <img src="images/logo/resources-n1.svg" alt="n1-logo">
+            </a>
+          </li>
+          <li class="resources__logo">
+            <a href="#">
+              <img src="images/logo/resources-strelka.svg" alt="strelka-logo">
+            </a>
+          </li>
+          <li class="resources__logo">
+            <a href="#">
+              <img src="images/logo/resources-polka.svg" alt="polka-logo">
+            </a>
+          </li>
+        </ul>
       </section>
-
-
     </main>
-
-
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-            <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="За стеклом">
+          <a href="https://praktikum.yandex.ru/" class="logo logo_place_footer"><img src="images/logo_place_footer.svg" alt="За стеклом"></a>
             <p class="footer__author">&copy;2021. Мунаввар Назаров</p>
         </div>
         <nav class="footer__column footer__column_content_info">
