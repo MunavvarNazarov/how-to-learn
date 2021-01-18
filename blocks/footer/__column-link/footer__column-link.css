@@ -6,6 +6,5 @@
   color: white;
 }
 .footer__column-link:hover {
-	background: slategray;
-	color: springgreen;
+	opacity: .3;
 }

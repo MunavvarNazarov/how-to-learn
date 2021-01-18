@@ -9,6 +9,5 @@
   color: #2f80ed;
 }
 .feynman__link:hover {
-    background: slategray;
-    color: springgreen;
+	opacity: .3;
 }

@@ -2,8 +2,9 @@
   width: 270px;
   height: 38px;
   text-align: center;
+  object-fit: cover;
+  object-position: initial;
 }
 .resources__logo:hover {
-  background: slategray;
-  color: springgreen;
+  opacity: .3;
 }

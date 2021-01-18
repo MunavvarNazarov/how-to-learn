@@ -6,6 +6,5 @@
   text-decoration: none;
 }
 .khan__buy-link:hover {
-  background: slategray;
-  color: springgreen;
+	opacity: .3;
 }

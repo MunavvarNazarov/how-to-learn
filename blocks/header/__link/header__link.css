@@ -3,6 +3,5 @@
   text-decoration: none;
 }
 .header__link:hover {
-  background: slategray;
-  color: springgreen;
+	opacity: .3;
 }
