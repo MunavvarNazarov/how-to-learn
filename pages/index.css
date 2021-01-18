@@ -57,8 +57,10 @@
 
 
 @import url(../blocks/resources/resources.css);
+@import url(../blocks/resources/__logos/reosurces__logos.css);
 @import url(../blocks/resources/__logo/resources__logo.css);
 @import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
+
 
 
 @import url(../blocks/footer/footer.css);
@@ -103,6 +105,6 @@
 
 
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/logo/__place/logo_place_header.css);
-@import url(../blocks/logo/__place/logo_place_footer.css);
+@import url(../blocks/logo/_place/logo_place_header.css);
+@import url(../blocks/logo/_place/logo_place_footer.css);
 
