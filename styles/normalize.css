@@ -282,7 +282,7 @@ textarea {
   height: auto;
 }
 
-/**
+/*
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
@@ -292,7 +292,7 @@ textarea {
   outline-offset: -2px; /* 2 */
 }
 
-/**
+/*
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
