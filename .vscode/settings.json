@@ -1,0 +1,5 @@
+{
+    "emmet.triggerExpansionOnTab": true,
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 18
+}
